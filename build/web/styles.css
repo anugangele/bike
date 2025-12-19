@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(two\ wheeler.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #083c69;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.bike-selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bike-card {
+    background-color: rgb(53, 128, 157) ;
+    margin: 0 50px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+}
+
+.bike-card img {
+    width: 100%;
+    height: auto;
+}
+
+.rental-form {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(111, 151, 184);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rental-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #083c69;
+    color:white;
+}

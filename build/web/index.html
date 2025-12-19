@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bike Rental</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Bikes</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reg.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bike-selection">
+        <h2>Select Your Bike</h2>
+        <div class="bike-card">
+            <img src="mountain-bike.jpg" alt="Mountain Bike">
+            <h3>Mountain Bike</h3>
+            <p>₹15/day</p>
+            <button onclick="selectBike('Mountain Bike', 15)">Rent Now</button>
+        </div>
+        <div class="bike-card">
+            <img src="road-bike.jpg" alt="Road Bike">
+            <h3>Road Bike</h3>
+            <p>₹20/day</p>
+            <button onclick="selectBike('Road Bike', 20)">Rent Now</button>
+        </div>
+    </section>
+
+    <section class="rental-form">
+        <h2>Rental Form</h2>
+        <form id="rental-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="days">Rental Days:</label>
+            <input type="number" id="days" required>
+            <label for="bike">Bike Type:</label>
+            <input type="text" id="bike" readonly>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Bike Rental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

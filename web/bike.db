@@ -1,0 +1,7 @@
+CREATE TABLE Bikes (
+    bike_id INT AUTO_INCREMENT PRIMARY KEY,
+    bike_name VARCHAR(255) NOT NULL,
+    bike_type VARCHAR(100) NOT NULL,  -- e.g., Mountain, Road, Electric
+    price_per_hour DECIMAL(10, 2) NOT NULL,  -- Price per hour rental
+    availability BOOLEAN NOT NULL DEFAULT TRUE  -- If the bike is available for rent
+);

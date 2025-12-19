@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Bike Rental System</title>
+    <link rel="stylesheet" href="adminpanel.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Bike Rental Admin Panel</h1>
+            <nav>
+                <ul>
+                    <li><a href="admin_dashboard.php">Dashboard</a></li>
+                    <li><a href="manage_bikes.php">Manage Bikes</a></li>
+                    <li><a href="manage_rentals.php">Manage Rentals</a></li>
+                    <li><a href="manage_customers.php">Manage Customers</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Bikes</h3>
+                    <p id="total-bikes">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Rentals</h3>
+                    <p id="total-rentals">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Customers</h3>
+                    <p id="total-customers">Loading...</p>
+                </div>
+            </div>
+
+            <div class="recent-activities">
+                <h3>Recent Activities</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-activities">
+                        <!-- Activities will be loaded here via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="adminpanel.js"></script>
+</body>
+</html>
